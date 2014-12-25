@@ -1,0 +1,22 @@
+{
+  "name": "pyschadelic-snake",
+  "version": "1.0.0",
+  "homepage": "http://www.pyschadelicsnake.com",
+  "authors": [
+    "Sean Prasertsit <sean@prasertsit.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sb-seanp/pyschadelic-snake.git"
+  },
+  "description": "Fansite for youtuber pyschadelicsnake.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
