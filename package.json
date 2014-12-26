@@ -1,16 +1,16 @@
 {
   "name": "pyschadelic-snake",
   "version": "1.0.0",
-  "description":"Fansite for youtuber pyschadelicsnake.",
-  "homepage":"http://www.pyschadelicsnake.com",
+  "description": "Fansite for youtuber pyschadelicsnake.",
+  "homepage": "http://www.pyschadelicsnake.com",
   "bugs": {
-    "url" : "http://github.com/sb-seanp/pyschadelic-snake/issues",
-    "email" : "sean@wulfcode.com"
+    "url": "http://github.com/sb-seanp/pyschadelic-snake/issues",
+    "email": "sean@wulfcode.com"
   },
   "author": {
-    "name" : "Sean Prasertsit",
-    "email" : "sean@prasertsit.com",
-    "url" : "http://wulfcode.com"
+    "name": "Sean Prasertsit",
+    "email": "sean@prasertsit.com",
+    "url": "http://wulfcode.com"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,11 @@
     "serve-favicon": "~2.1.3",
     "debug": "~2.0.0",
     "jade": "~1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jade": "^0.10.0",
+    "gulp-livereload": "^3.0.2",
+    "gulp-stylus": "^1.3.4"
   }
 }

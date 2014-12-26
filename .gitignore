@@ -5,6 +5,9 @@ node_modules/
 ### Bower components
 public/bower_components/
 
+### HTML and CSS
+*.html
+*.css
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 

@@ -1,7 +1,21 @@
 doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+html(ng-app)
+   head
+       title= title
+       link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+       link(rel='stylesheet', href='/bower_components/bootstrap-material-design/dist/css/ripples.css')
+       link(rel='stylesheet', href='/bower_components/bootstrap-material-design/dist/css/material-wfont.css')
+       link(rel='stylesheet', href='/stylesheets/layout.css')
+
+   body
+       include base/header.jade
+       .max-width
+           block content
+       block footer
+
+       // Scripts
+       script(src='/bower_components/jquery/dist/jquery.min.js')
+       script(src='/bower_components/angular/angular.js')
+       script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+       script(src='/bower_components/bootstrap-material-design/dist/js/ripples.min.js')
+       script(src='/bower_components/bootstrap-material-design/dist/js/material.min.js')
