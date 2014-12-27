@@ -1,12 +1,39 @@
 @require 'variables.styl'
 
-// Universal
+// #Universal
+html, body
+    height 100vh
 .max-width
-    margin: 0 auto
-    max-width: 960px
+    margin  0 auto
+    max-width  960px
+// Colors
+.green
+    color green
+.orange
+    color orange
+h1,h2,h3,h4,h5,h6
+    font-family Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
 
-// Header
+// #Header
+header
+    font-family Nunito, 'Avenir Next', Avenir, sans-serif
+.mdi-navigation-menu
+    color white
+    font-size large
 .navbar-default
-    background-color: black
-.navbar .navbar-nav > li > a:hover
-    color: green
+    background-color  black
+.navbar-nav
+    float right
+.navbar .navbar-nav > li > a
+    font-size larger
+    &:hover
+        color  green
+        
+// #Content
+section h1
+    margin-top 0
+    display inline
+// Landing
+.landing
+    background url("../images/fatal_frame_bg.png") no-repeat center center
+    height 100vh
