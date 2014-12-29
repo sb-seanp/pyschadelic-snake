@@ -1,4 +1,21 @@
-@require 'variables.styl'
+@import 'nib'
+
+red = #F44336
+pink = #E91E63
+purple = #9C27B0
+deep_purple = #673AB7
+indigo = #3F51B5
+blue = #2196F3
+light_blue = #03A9F4
+cyan = #00BCD4
+teal = #009688
+green = #4CAF50
+yellow = #FFEB3B
+orange = #FF9800
+deep_orange = #FF5722
+blue_grey = #607D8B
+black = #111111
+white = #eeeeee
 
 // #Universal
 html, body
@@ -6,18 +23,14 @@ html, body
 .max-width
     margin  0 auto
     max-width  960px
-// Colors
-.green
-    color green
-.orange
-    color orange
 h1,h2,h3,h4,h5,h6
-    font-family Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 // #Header
 header
     font-family Nunito, 'Avenir Next', Avenir, sans-serif
-.mdi-navigation-menu
+nav
+    box-shadow 0 5px 16px 0 #000000
     color white
     font-size large
 .navbar-default
@@ -30,10 +43,31 @@ header
         color  green
         
 // #Content
-section h1
-    margin-top 0
-    display inline
-// Landing
-.landing
-    background url("../images/fatal_frame_bg.png") no-repeat center center
+.block
     height 100vh
+    position relative
+    z-index -10
+.division
+    height 80px
+    margin-top -40px
+    box-shadow 0 5px 8px #000000, 0 -5px 8px #000000
+
+// Landing
+#landing
+    background url("../images/fatal_frame_bg.png") no-repeat center center
+#landing-heading
+    display block
+    position relative
+    top 50vh
+    max-width 768px
+    width 100%
+    margin 0 auto
+#landing-division
+    background-color green
+
+// About
+#about
+    background url('../images/mgs4_bg.png') no-repeat center center
+    top -40px
+#about-division
+    background-color deep_orange
