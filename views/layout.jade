@@ -1,25 +1,32 @@
 doctype html
 html(ng-app)
    head
-       title= title
+       title Pyschadelic Snake
        meta(name='viewport' content='initial-scale=1')
        meta(name='description' content='Pyschadelicsnake fansite.')
        meta(name='keywords' content='youtube, hitbox, twitter, pyschadelicsnake, snake, stream')
        link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Nunito|Roboto|Open+Sans')
-       link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css')
-       link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
-       link(rel='stylesheet' href='/bower_components/bootstrap-material-design/dist/css/ripples.css')
-       link(rel='stylesheet' href='/bower_components/bootstrap-material-design/dist/css/material-wfont.css')
-       link(rel='stylesheet' href='/stylesheets/layout.css')
+       link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize' +
+       '.min.css')
+       link(rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min' +
+       '.css')
+       link(rel='stylesheet' type='text/css' href='/bower_components/bootstrap-material-design/dist/css/ripples.css')
+       link(rel='stylesheet' type='text/css'
+       href='/bower_components/bootstrap-material-design/dist/css/material-wfont.css')
+       link(rel='stylesheet' type='text/css' href='/stylesheets/layout.css')
 
    body
        include header
        block content
-       block footer
+       include footer
 
        // Scripts
-       script(src='/bower_components/jquery/dist/jquery.min.js')
-       script(src='/bower_components/angular/angular.js')
-       script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
-       script(src='/bower_components/bootstrap-material-design/dist/js/ripples.min.js')
-       script(src='/bower_components/bootstrap-material-design/dist/js/material.min.js')
+       script(type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js')
+       script(type='text/javascript' src='/bower_components/angular/angular.js')
+       script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+       script(type='text/javascript' src='/bower_components/bootstrap-material-design/dist/js/ripples.min.js')
+       script(type='text/javascript' src='/bower_components/bootstrap-material-design/dist/js/material.min.js')
+       script(type='text/javascript' src='/javascripts/main.js')
+       script(type='text/javascript').
+           window.Scrolling.init();
+           clickCollapse();

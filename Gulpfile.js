@@ -10,11 +10,11 @@ var gulp        = require('gulp'),
     path        = require('path');
 
 // Lint javascript
-/*gulp.task('lint', function(){
+gulp.task('lint', function(){
     gulp.src('public/javascripts/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter(stylish));
-});*/
+});
 
 // Compile Stylus stylesheets
 gulp.task('stylus', function(){
@@ -44,9 +44,10 @@ gulp.task('server', function(){
         file: 'bin/www'
     });
     livereload.listen();
+    gulp.watch('public/javascripts/*.js', ['lint']);
     gulp.watch('public/stylesheets/*.styl', ['stylus']);
     gulp.watch('views/*.jade', ['jade']);
 });
 
 // Default task
-gulp.task('default', [/*'lint',*/ 'stylus', 'jade', 'server']);
+gulp.task('default', ['lint', 'stylus', 'jade', 'server']);

@@ -1,21 +1,22 @@
 @import 'nib'
 
-red = #F44336
-pink = #E91E63
-purple = #9C27B0
+red         = #F44336
+pink        = #E91E63
+purple      = #9C27B0
 deep_purple = #673AB7
-indigo = #3F51B5
-blue = #2196F3
-light_blue = #03A9F4
-cyan = #00BCD4
-teal = #009688
-green = #4CAF50
-yellow = #FFEB3B
-orange = #FF9800
+indigo      = #3F51B5
+blue        = #2196F3
+light_blue  = #03A9F4
+cyan        = #00BCD4
+teal        = #009688
+green       = #4CAF50
+lime        = #ace600
+yellow      = #FFEB3B
+orange      = #FF9800
 deep_orange = #FF5722
-blue_grey = #607D8B
-black = #111111
-white = #eeeeee
+blue_grey   = #607D8B
+black       = #111111
+white       = #eeeeee
 
 // #Universal
 html, body
@@ -25,6 +26,8 @@ html, body
     max-width  960px
 h1,h2,h3,h4,h5,h6
     font-family 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+p
+    font-family Roboto, 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 // #Header
 header
@@ -38,7 +41,9 @@ nav
 .navbar-nav
     float right
 .navbar .navbar-nav > li > a
-    font-size larger
+    font-size large
+    color white
+    transition .5s
     &:hover
         color  green
         
@@ -49,12 +54,12 @@ nav
     z-index -10
 .division
     height 80px
-    margin-top -40px
     box-shadow 0 5px 8px #000000, 0 -5px 8px #000000
 
 // Landing
 #landing
     background url("../images/fatal_frame_bg.png") no-repeat center center
+    background-size cover
 #landing-heading
     display block
     position relative
@@ -64,10 +69,50 @@ nav
     margin 0 auto
 #landing-division
     background-color green
+    margin-top -40px
 
 // About
 #about
     background url('../images/mgs4_bg.png') no-repeat center center
+    background-size cover
     top -40px
 #about-division
     background-color deep_orange
+    margin-top -80px
+
+// YouTube
+#youtube
+    background url('../images/silent_hill_bg.png') no-repeat center center
+    background-size cover
+    top -40px
+#youtube-division
+    background-color red
+    margin-top -80px
+
+// Hitbox
+#hitbox
+    background url('../images/witcher_2_bg.png') no-repeat center center
+    background-size cover
+    top -40px
+#hitbox-division
+    background-color lime
+    margin-top -80px
+
+// Twitter
+#twitter
+    background url('../images/resident_evil_bg.png') no-repeat center center
+    background-size cover
+    top -40px
+#twitter-division
+    background-color light_blue
+    margin-top -80px
+
+// #Footer
+footer
+    height 60px
+    background-color black
+    &>p
+        color white
+        text-align center
+        position relative
+        top 20px
