@@ -44,5 +44,7 @@ gulp.task('server', function(){
     gulp.watch('views/*.jade', ['jade']);
 });
 
+gulp.task('deploy', ['lint', 'stylus', 'jade']);
+
 // Default task
 gulp.task('default', ['lint', 'stylus', 'jade', 'server']);
