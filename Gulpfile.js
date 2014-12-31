@@ -6,7 +6,6 @@ var gulp        = require('gulp'),
     nib         = require('nib'),
     jshint      = require('gulp-jshint'),
     stylish     = require('jshint-stylish'),
-    livereload  = require('gulp-livereload'),
     path        = require('path');
 
 // Lint javascript
@@ -24,17 +23,13 @@ gulp.task('stylus', function(){
             compress: true
         }))
         .pipe(gulp.dest('public/stylesheets/'))
-        .pipe(livereload());
 });
 
 // Compile Jade templates
 gulp.task('jade', function(){
     gulp.src('views/*.jade')
-        .pipe(jade({
-            pretty: true
-        }))
+        .pipe(jade())
         .pipe(gulp.dest('./views/'))
-        .pipe(livereload());
 });
 
 // Watch for changes and restart server if necessary
@@ -43,7 +38,6 @@ gulp.task('server', function(){
     server.run({
         file: 'bin/www'
     });
-    livereload.listen();
     gulp.watch('routes/*.js', ['server']);
     gulp.watch('public/javascripts/*.js', ['lint']);
     gulp.watch('public/stylesheets/*.styl', ['stylus']);
