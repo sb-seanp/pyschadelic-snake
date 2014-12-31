@@ -44,6 +44,7 @@ gulp.task('server', function(){
         file: 'bin/www'
     });
     livereload.listen();
+    gulp.watch('routes/*.js', ['server']);
     gulp.watch('public/javascripts/*.js', ['lint']);
     gulp.watch('public/stylesheets/*.styl', ['stylus']);
     gulp.watch('views/*.jade', ['jade']);

@@ -6,7 +6,7 @@ purple      = #9C27B0
 deep_purple = #673AB7
 indigo      = #3F51B5
 blue        = #2196F3
-light_blue  = #03A9F4
+light_blue  = #55acee
 cyan        = #00BCD4
 teal        = #009688
 green       = #4CAF50
@@ -50,8 +50,21 @@ nav
 // #Content
 .block
     height 100vh
+    min-height 768px
     position relative
     z-index -10
+    @media screen and (max-width: 414px)
+        min-height 0
+.content-text
+    & p
+        @media screen and (max-width: 768px)
+            text-align left
+    @media screen and (max-width: 768px)
+        text-align center
+.content-wrapper
+    color white
+    position relative
+    top 25%
 .division
     height 80px
     box-shadow 0 5px 8px #000000, 0 -5px 8px #000000
@@ -85,6 +98,13 @@ nav
     background url('../images/silent_hill_bg.png') no-repeat center center
     background-size cover
     top -40px
+#youtube-logo
+    max-width 75%
+    @media screen and (max-width: 768px)
+        max-width 33%
+#youtube-button
+    color white
+    background-color red
 #youtube-division
     background-color red
     margin-top -80px
@@ -94,6 +114,13 @@ nav
     background url('../images/witcher_2_bg.png') no-repeat center center
     background-size cover
     top -40px
+#hitbox-logo
+    max-width 75%
+    @media screen and (max-width: 768px)
+        max-width 33%
+#hitbox-button
+    color black
+    background-color lime
 #hitbox-division
     background-color lime
     margin-top -80px
@@ -103,6 +130,13 @@ nav
     background url('../images/resident_evil_bg.png') no-repeat center center
     background-size cover
     top -40px
+#twitter-logo
+    max-width 75%
+    @media screen and (max-width: 768px)
+        max-width 33%
+#twitter-button
+    color black
+    background-color light_blue
 #twitter-division
     background-color light_blue
     margin-top -80px

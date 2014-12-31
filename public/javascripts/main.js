@@ -7,10 +7,10 @@ Scrolling = {
         $('.navbar-brand').click(function(){
             $('html,body').animate({scrollTop: 0});
         });
-        Scrolling.scrollToElement('#about-button', '#about');
-        Scrolling.scrollToElement('#youtube-button', '#youtube');
-        Scrolling.scrollToElement('#hitbox-button', '#hitbox');
-        Scrolling.scrollToElement('#twitter-button', '#twitter');
+        Scrolling.scrollToElement('#about-nav', '#about');
+        Scrolling.scrollToElement('#youtube-nav', '#youtube');
+        Scrolling.scrollToElement('#hitbox-nav', '#hitbox');
+        Scrolling.scrollToElement('#twitter-nav', '#twitter');
     },
 
     // Function that takes in a button string and a container string and scrolls to the container
@@ -20,6 +20,11 @@ Scrolling = {
         });
     }
 };
+
+function init(){
+    $.material.ripples();
+    clickCollapse();
+}
 
 function clickCollapse() {
     $(document).on('click','.navbar-collapse.in',function(e) {
